@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Tempate | Rejka Permana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Google Font - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/cfac088083.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">Navbar w/ text</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse accordion" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Payment
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link collapsed" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+              Mutation
+            </span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Navbar text with an inline element
+        </span>
+      </div>
+    </nav>
+    <div class="nav-option-list collapse" id="collapseExample">
+      <div class="nav-option">
+        <div class="nav-item ml-4">
+          <a href="#">History</a>
+        </div>
+        <div class="nav-item ml-4">
+          <a href="#">Via List</a>
+        </div>
+      </div>
+    </div>
+    <div class="nav-option-list collapse" id="collapseExample1">
+      <div class="nav-option">
+        Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+      </div>
+    </div>
+
+    <div class="content container">
+      <div class="text-center">
+        <h1>Bootstrap template | Rejka Permana</h1>
+      </div>
+      <br>
+      <div class="accordion" id="accordionExample">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <span class="btn btn-link btn-block text-left border-none" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Navbar
+              </span>
+            </h2>
+          </div>
+
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+
+              <div class="code">
+                <span class="code-title">HTML</span><br>
+                <code>Copy this navbar by inspect element on nav, and copy nav-option-list too</code>
+              </div>
+              <div class="code">
+                <span class="code-title">CSS</span><br>
+                <code><xnp>nav {
+                  background-color: #261C2C;
+                }
+
+                .nav-link {
+                  color: white;
+                  transition: all 5s;
+                }
+
+                .nav-option {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  height: 70px;
+                  width: 100vw;
+                  background-color: #3D56B2;
+                }
+
+                .nav-item a {
+                  color: #fff;
+                }
+
+                .navbar-brand {
+                  color: white;
+                }</xmp></code>
+              </div>
+              <div class="code">
+                <span class="code-title">Js</span><br>
+                <code>
+                  $('li.nav-item').on('click', function(){
+                    $('li.nav-item').not(this).removeClass('nav-link-show').toggle()
+                    $(this).toggleClass('nav-link-show')
+                  })</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <span class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Button
+              </span>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+              <div class="code">
+                <span class="code-title">css</span>
+                <code>.btn-primary {background-color:#1597E5;border-right: 5px solid #69DADB;border-bottom: 5px solid #69DADB;} .btn-secondary {background-color: #082032;border-right: 5px solid #334756;border-bottom: 5px solid #334756;} .btn-success {background-color: #1B8057;border-right: 5px solid #55A44E;border-bottom: 5px solid #55A44E;} .btn-danger {background-color: #F73859;border-right: 5px solid #F06868;border-bottom: 5px solid #F06868;} .btn-warning {background-color: #D98C00;border-right: 5px solid #FFA400;border-bottom: 5px solid #FFA400;} .btn-info {background-color: #3D56B2;border-right: 5px solid #5C7AEA;border-bottom: 5px solid #5C7AEA;} .btn-light {background-color: #cee5d0;color: black;border-right: 5px solid #F7F6F2;border-bottom: 5px solid #F7F6F2;} .btn-dark {background-color: #11052C;border-right: 5px solid #3D087B;border-bottom: 5px solid #3D087B;} .btn-link {background-color: #5F7A61; border-right: 5px solid #D5EEBB;border-bottom: 5px solid #D5EEBB}</code>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+              <span class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Collapsible Group Item #3
+              </span>
+            </h2>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+              And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Custom js -->
+    <script src="js/index.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  </body>
+</html>
